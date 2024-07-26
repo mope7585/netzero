@@ -217,6 +217,39 @@ function swiper() {
             slidesPerGroup: 4,
         }
     }
+    });
+  
+  var swiper3 = new Swiper('.third-swiper', {
+    slidesPerView: "auto",
+    slidesPerGroup: 4,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    autoHeight: false,
+    navigation: {
+        nextEl: '.landing-swiper-container3 .third-swiper-button-next',
+        prevEl: '.landing-swiper-container3 .third-swiper-button-prev',
+    },
+    pagination: {
+        el: ".third-swiper .swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerGroup: 1,
+        },
+        480: {
+            slidesPerGroup: 1,
+        },
+        640: {
+            slidesPerGroup: 1,
+        },
+        1080: {
+            slidesPerGroup: 3,
+        },
+        1081: {
+            slidesPerGroup: 4,
+        }
+    }
   });
 }
 

@@ -2509,7 +2509,8 @@ p {
 }
 
 strong {
-  font-weight: 700;
+    font-weight: 700;
+    color: #00BB9B;
 }
 
 h1,
@@ -2618,7 +2619,7 @@ input[type="radio"]:focus {
   white-space: nowrap;
   text-indent: 100%;
   overflow: hidden;
-  background-image: url(../images/bk-02.png);
+  background-image: url(../images/logo.png);
   position: absolute;
   display: block;
   top: 47px;
@@ -3763,7 +3764,7 @@ input[type="radio"]:focus {
   cursor: pointer;
   z-index: 11;
   background-size: contain;
-  background-image: url(../images/List_menu_toggle-512.webp);
+  background-image: url(../images/menu-toggle.png);
 }
 
 .menu-close {
@@ -4759,7 +4760,7 @@ input[type="radio"]:focus {
     margin-bottom: 20px;
   }
   .speaker .landing-swiper-container {
-    padding: 0 48px;
+    padding: 0px;
   }
   .speaker .swiper-slide {
     width: 100%;
@@ -4803,9 +4804,8 @@ input[type="radio"]:focus {
   }
 
   .activity .container {
-    padding-top: 10px;
+    padding-top: 60px;
     padding-bottom: 35px;
-    height: 450px;
   }
   .activity .section-header {
     margin-bottom: 24px;
@@ -5108,30 +5108,78 @@ input[type="radio"]:focus {
     max-width: none;
   }
 }
-.webnoshow {
-  display: none;
+#statistics-1 .section-header{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.arrow {
+#statistics-1 .landing-swiper-container{
+  position: relative;
+  margin: 0 auto;
+  padding: 0 85px;
+}
+
+.image-gallery {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* 对Firefox隐藏滚动条 */
+  -ms-overflow-style: none; /* 对IE和Edge隐藏滚动条 */
+}
+
+.image-gallery::-webkit-scrollbar {
+  display: none; /* 对Chrome、Safari和Opera隐藏滚动条 */
+}
+
+.image-container {
+  flex: 0 0 auto;
+  width: 33.33%;
+  max-width: 300px; /* 设定容器的最大宽度 */
+  padding: 10px; /* 添加间距 */
+  box-sizing: border-box; /* 确保padding不会增加元素的宽度 */
+  scroll-snap-align: start;
+  margin: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+      width: 100%;
+      max-width: none;
+  }
+}
+/* 样式以保证箭头显示在正确位置 */
+.arrow-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   z-index: 10;
 }
 
-.left-arrow {
+.arrow-button.left {
   left: 10px;
 }
 
-.right-arrow {
+.arrow-button.right {
   right: 10px;
 }
 
-/* ------------------- */
 
 
 .gradient-underline {

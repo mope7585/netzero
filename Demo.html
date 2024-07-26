@@ -342,8 +342,8 @@
                             <span class="gradient-underline">專家陣容</span>
                         </h2>
                         <div class="section-content in-view">
-                            <div class="landing-swiper-container">
-                                <div class="swiper-container l-swiper">
+                            <div class="landing-swiper-container3">
+                                <div class="swiper-container third-swiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <a class="item" data-toggle="modal" onclick="toggleDescription(event)">
@@ -448,9 +448,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                                <!-- Add Pagination -->
                                 <div class="swiper-pagination"></div>
+                                <!-- Add Navigation -->
+                                <div class="swiper-button-prev third-swiper-button-prev"></div>
+                                <div class="swiper-button-next third-swiper-button-next"></div>
                             </div>
                         </div>
                     </div>
@@ -769,7 +771,30 @@
                 // 在這裡添加切換到下一張圖片的代碼
             }
 
+            function toggleDescription(event) {
+                // 阻止默认的链接行为
+                event.preventDefault();
 
+                // 获取点击的元素
+                var item = event.currentTarget;
+
+                // 查找 .description 元素
+                var description = item.querySelector('.description');
+
+                // 查找 .arrow 元素
+                var arrow = item.querySelector('.arrow');
+
+                // 切换显示和隐藏
+                if (description.style.display === 'none') {
+                    description.style.display = 'block';
+                    arrow.classList.remove('down');
+                    arrow.classList.add('up');
+                } else {
+                    description.style.display = 'none';
+                    arrow.classList.remove('up');
+                    arrow.classList.add('down');
+                }
+            }
 
 
             // $('#video-modal').modal('show');
