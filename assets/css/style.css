@@ -2940,8 +2940,8 @@ input[type="radio"]:focus {
   background-image: url(../images/intro-bg.jpg);
 }
 .intro .container {
-  padding-top: 85px;
-  padding-bottom: 85px;
+  padding-top: 80px;
+  padding-bottom: 0px;
   max-width: 1150px;
 }
 .intro .top-block {
@@ -3008,9 +3008,10 @@ input[type="radio"]:focus {
 }
 .intro .data .section-header .text-small {
   /* font-size: 16px; */
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: 700;
   line-height: 24px;
-  color: #3a726d;
+  color: #000;
   margin-left: 32px;
   font-weight: 500;
   letter-spacing: .025em;
@@ -3143,7 +3144,7 @@ input[type="radio"]:focus {
 .speaker .landing-swiper-container {
   position: relative;
   margin: 0 auto;
-  padding: 0 85px;
+  padding: 0;
 }
 .speaker .l-swiper {
   z-index: 0;
@@ -3199,7 +3200,8 @@ input[type="radio"]:focus {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-.speaker .content {
+.speaker .content,
+.speaker1 .content {
   position: relative;
   background-image: url(../images/speaker-item-bg.jpg);
   background-size: 100% auto;
@@ -3208,22 +3210,26 @@ input[type="radio"]:focus {
   min-height: 126px;
   background-color: #fff;
 }
-.speaker .description{
+.speaker .description,
+.speaker1 .description{
   background-color: #fff;
 }
-.speaker .main-text {
+.speaker .main-text,
+.speaker1 .main-text{
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
   margin-bottom: 8px;
 }
-.speaker .main-text2 {
+.speaker .main-text2,
+.speaker1 .main-text2 {
   font-size: 21px;
   line-height: 30px;
   font-weight: 480;
   margin-bottom: 8px;
 }
-.speaker .sub-text {
+.speaker .sub-text,
+.speaker1 .sub-text {
   font-size: 15px;
   line-height: 21px;
   letter-spacing: -.025em;
@@ -3580,7 +3586,7 @@ input[type="radio"]:focus {
 }
 
 .traffic .container {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 90px;
 }
 .traffic .section-header {
@@ -4760,7 +4766,7 @@ input[type="radio"]:focus {
   .speaker .container {
     padding: 0;
     padding-top: 50px;
-    padding-bottom: 120px;
+    padding-bottom: 0px;
   }
   .speaker .section-header {
     margin-bottom: 20px;
@@ -5154,7 +5160,7 @@ input[type="radio"]:focus {
   padding: 10px; /* 添加间距 */
   box-sizing: border-box; /* 确保padding不会增加元素的宽度 */
   scroll-snap-align: start;
-  margin: auto;
+  margin: 0 20px;
 }
 
 .image-container img {
@@ -5219,9 +5225,9 @@ input[type="radio"]:focus {
 }
 
 .container_s .item {
-  width: 25%;
+  width: 26%;
   box-sizing: border-box;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .container_s .item img {
@@ -5343,4 +5349,12 @@ input[type="radio"]:focus {
 }
 .section.kv {
   cursor: pointer;
+}
+.close{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.modal .modal-dialog .modal-content .close{
+  display: flex;
+  flex-direction: column-reverse;
 }
