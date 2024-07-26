@@ -2627,6 +2627,7 @@ input[type="radio"]:focus {
   z-index: 16;
   width: 121px;
   height:35px;
+  
 }
 .site-header.sticky {
   height: 60px;
