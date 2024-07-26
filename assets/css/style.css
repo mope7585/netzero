@@ -2627,7 +2627,7 @@ input[type="radio"]:focus {
   z-index: 16;
   width: 121px;
   height:35px;
-  
+
 }
 .site-header.sticky {
   height: 60px;
@@ -5052,6 +5052,11 @@ input[type="radio"]:focus {
   #logo-text {
     font-size: 12px;
   }
+  .logo_box{
+    display: flex;
+    position: absolute;
+    top: 13px;
+  }
 }
 /* 擴充 */
 #statistics-1 .section-header,
@@ -5318,10 +5323,23 @@ input[type="radio"]:focus {
     height: 385px;
   }
 }
-.logo_box{
+/* 電腦螢幕大小 */
+.logo_box {
   display: flex;
   position: absolute;
   top: 13px;
+  left: -140px;
+}
+
+/* 手機螢幕大小 */
+@media (max-width: 768px) {
+  .logo_box {
+    display: flex;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    /* 確保在手機上適當的位置 */
+  }
 }
 .section.kv {
   cursor: pointer;
