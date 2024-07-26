@@ -260,7 +260,7 @@
                     </div>
 
                     <!-- For mobile view -->
-                    <div id="statistics-1_s webnoshow" class="landing-swiper-container2 data">
+                    <div id="statistics-1_s" class="landing-swiper-container2 data">
                         <h2 class="section-header in-view">
                             <span class="gradient-underline">精彩議程</span><br />
                             <span class="text-small">三大關鍵主題，帶您掌握淨零永續新知動態</span>
@@ -745,6 +745,19 @@
             function redirect() {
                 window.location.href = 'https://event.gvm.com.tw/CathaySummit/2024/';
             }
+
+            function checkScreenSize() {
+                if (window.innerWidth <= 768) {
+                    document.getElementById('statistics-1').style.display = 'none';
+                    document.getElementById('statistics-1_s').style.display = 'block';
+                } else {
+                    document.getElementById('statistics-1').style.display = 'block';
+                    document.getElementById('statistics-1_s').style.display = 'none';
+                }
+            }
+
+            window.onload = checkScreenSize;
+            window.onresize = checkScreenSize;
 
             function prevImage(index) {
                 console.log('Previous image for container ' + index);
