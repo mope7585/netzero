@@ -65,14 +65,17 @@
     <div id="container">
         <div id="header" class="site-header">
             <div class="container">
-                <a class="logo" href="#" target="_blank"></a>
+                <div class="logo_box">
+                    <a class="logo" href="https://www.ctbcbank.com/twrbo/zh_tw/esg_index.html" target="_blank"></a>
+                    <p class="logo-text" id="logo-text">2024淨零永續關鍵行動論壇</p>
+                </div>
                 <div id="site-menu" class="site-menu">
                     <div id="menu-toggle" class="menu-toggle"><span>toggle menu</span></div>
                     <div class="menu-panel">
                         <ul class="main-menu">
-                            <li><a href="#speaker">講者陣容</a></li>
-                            <li><a href="#agenda">精彩議程</a></li>
-                            <li><a href="#activity">立即報名</a></li>
+                            <li><a href="#speaker1">講師陣容</a></li>
+                            <li><a href="#statistics-1">精彩議程</a></li>
+                            <li><a onclick="redirectToWebsite()">立即報名</a></li>
                             <li><a href="#traffic">交通資訊</a></li>
                         </ul>
                         <div id="menu-close" class="menu-close"><span>close</span></div>
@@ -84,7 +87,7 @@
             </div>
         </div>
         <div id="content" class="site-content">
-            <div class="section kv">
+            <div class="section kv" onclick="redirectToWebsite()">
                 <div class="bg"></div>
                 <div class="container">
                     <!-- <div class="lg-view"><img src="assets/images/kv.png" alt="">
@@ -204,8 +207,22 @@
                                                             class="lazyload">
                                                     </div>
                                                     <div class="content">
-                                                        <div class="main-text">劉坤興</div>
-                                                        <div class="sub-text">工研院綠能所<br />經理</div>
+                                                        <div class="main-text">利明献</div>
+                                                        <div class="sub-text">中國信託商業銀行<br />董事長</div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_06.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">張培仁</div>
+                                                        <div class="sub-text">工業技術研究院<br />副院長</div>
                                                     </div>
                                                     <div class="description" style="display: none;">
                                                         工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
@@ -216,18 +233,187 @@
                                             <div class="swiper-slide">
                                                 <a class="item" data-toggle="modal">
                                                     <div class="image">
-                                                        <img data-src="assets/images/專家_06.png" loading="lazy"
+                                                        <img data-src="assets/images/講師_07.jpg" loading="lazy"
                                                             class="lazyload">
                                                     </div>
                                                     <div class="content">
-                                                        <div class="main-text">Ted Chen</div>
-                                                        <div class="sub-text">新加坡豪穎科技(Evercomm)<br />創辦人暨CEO</div>
-                                                        <div class="arrow down"></div> <!-- 新增的箭头 -->
+                                                        <div class="main-text">范建得</div>
+                                                        <div class="sub-text">國立清華大學
+                                                            科技法律研究所 教授<br />台灣氣候聯盟顧問</div>
                                                     </div>
                                                     <div class="description" style="display: none;">
-                                                        Evercomm主要服務內容是智慧減碳服務(decarbonisation digital
-                                                        services)以及透過AI驅動的能源數據平台，替企業客戶進行環境及永續經營的風險管理，並推動綠色金融產品。合作對象包括新加坡政府，聯合國發展署、新北市政府，台灣中華電信以及大型顧問公司如
-                                                        Ernst & Young。
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_08.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">胡竹生</div>
+                                                        <div class="sub-text">工業技術研究院<br />副院長</div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_09.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">蔣振彰</div>
+                                                        <div class="sub-text">中國信託商業銀行<br />策略長</div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_10.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">陳世賢</div>
+                                                        <div class="sub-text">奇美實業股份有限公司<br />副總經理</div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_11.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">吳一民</div>
+                                                        <div class="sub-text">中國鋼鐵股份有限公司
+                                                            環境保護<br />處長</div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_12.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">周光春</div>
+                                                        <div class="sub-text">日月光半導體
+                                                            <br />資深副總
+                                                        </div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_13.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">楊銘祥</div>
+                                                        <div class="sub-text">中國信託商業銀行<br />總經理</div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_14.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">林泉興</div>
+                                                        <div class="sub-text">安侯永續發展顧問
+                                                            執行副總經理 /
+                                                            國立台灣大學管理學院
+                                                            兼任教授
+                                                        </div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_15.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">蕭志鵬</div>
+                                                        <div class="sub-text">中國信託商業銀行<br />處長</div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_16.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">陳立偉</div>
+                                                        <div class="sub-text">工業技術研究院
+                                                            產業服務中心<br />執行長</div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a class="item" data-toggle="modal">
+                                                    <div class="image">
+                                                        <img data-src="assets/images/講師_17.jpg" loading="lazy"
+                                                            class="lazyload">
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main-text">廖泰翔</div>
+                                                        <div class="sub-text">高市政府經發局
+                                                            <br />局長
+                                                        </div>
+                                                    </div>
+                                                    <div class="description" style="display: none;">
+                                                        工研院綠色材料與分析研究室經理，於永續產業發展、循環經濟、產業綠色轉型有深厚之研究。具備 ISO 50001：2018
+                                                        能源管理系統主導稽核員資格。碳排放諮詢輔導專員
                                                     </div>
                                                 </a>
                                             </div>
@@ -795,7 +981,9 @@
                     arrow.classList.add('down');
                 }
             }
-
+            function redirectToWebsite() {
+                window.open('https://www.surveycake.com/s/xXbGe', '_blank');
+            }
 
             // $('#video-modal').modal('show');
 
