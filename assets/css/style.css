@@ -5044,15 +5044,18 @@ input[type="radio"]:focus {
   }
 }
 /* 擴充 */
-#statistics-1 .section-header{
+#statistics-1 .section-header,
+#statistics-1_s .section-header {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-#statistics-1 .landing-swiper-container{
+
+#statistics-1 .landing-swiper-container,
+#statistics-1_s .landing-swiper-container {
   position: relative;
   margin: 0 auto;
-  padding: 0 85px;
+  /* padding: 0 85px; */
 }
 
 .image-gallery {
@@ -5060,22 +5063,29 @@ input[type="radio"]:focus {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* 对Firefox隐藏滚动条 */
-  -ms-overflow-style: none; /* 对IE和Edge隐藏滚动条 */
+  scrollbar-width: none;
+  /* 对Firefox隐藏滚动条 */
+  -ms-overflow-style: none;
+  /* 对IE和Edge隐藏滚动条 */
 }
 
 .image-gallery::-webkit-scrollbar {
-  display: none; /* 对Chrome、Safari和Opera隐藏滚动条 */
+  display: none;
+  /* 对Chrome、Safari和Opera隐藏滚动条 */
 }
 
 .image-container {
   flex: 0 0 auto;
   width: 33.33%;
-  max-width: 300px; /* 设定容器的最大宽度 */
-  padding: 10px; /* 添加间距 */
-  box-sizing: border-box; /* 确保padding不会增加元素的宽度 */
+  max-width: 300px;
+  /* 设定容器的最大宽度 */
+  padding: 10px;
+  /* 添加间距 */
+  box-sizing: border-box;
+  /* 确保padding不会增加元素的宽度 */
   scroll-snap-align: start;
   margin: auto;
+  position: relative;
 }
 
 .image-container img {
@@ -5085,37 +5095,43 @@ input[type="radio"]:focus {
 }
 
 @media (max-width: 768px) {
+  #statistics-1 {
+    display: none;
+  }
+
+  #statistics-1_s {
+    display: block;
+  }
+
   .image-container {
-      width: 100%;
-      max-width: none;
+    width: 100%;
+    max-width: none;
   }
 }
-/* 样式以保证箭头显示在正确位置 */
-.arrow-button {
+.webnoshow {
+  display: none;
+}
+.arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
   cursor: pointer;
   z-index: 10;
 }
 
-.arrow-button.left {
+.left-arrow {
   left: 10px;
 }
 
-.arrow-button.right {
+.right-arrow {
   right: 10px;
 }
 
+/* ------------------- */
 
 
 .gradient-underline {

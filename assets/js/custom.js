@@ -186,8 +186,41 @@ function swiper() {
         }
     });
 
-
+    var swiper2 = new Swiper('.second-swiper', {
+    slidesPerView: "auto",
+    slidesPerGroup: 4,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    autoHeight: false,
+    navigation: {
+        nextEl: '.landing-swiper-container2 .second-swiper-button-next',
+        prevEl: '.landing-swiper-container2 .second-swiper-button-prev',
+    },
+    pagination: {
+        el: ".second-swiper .swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerGroup: 1,
+        },
+        480: {
+            slidesPerGroup: 1,
+        },
+        640: {
+            slidesPerGroup: 1,
+        },
+        1080: {
+            slidesPerGroup: 3,
+        },
+        1081: {
+            slidesPerGroup: 4,
+        }
+    }
+  });
 }
+
+
 
 (function ($) {
   $.fn.countup = function (params) {
