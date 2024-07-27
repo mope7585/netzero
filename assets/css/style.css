@@ -2849,7 +2849,8 @@ input[type="radio"]:focus {
   margin-top: 4px;
 }
 .section .section-header span {
-  max-width: calc(100% - 37px - 16px);
+    max-width: calc(100% - 37px - 16px);
+    text-align: center;
 }
 .section .section-content {
   margin: 0 auto;
@@ -4262,10 +4263,10 @@ input[type="radio"]:focus {
     max-width: 100%;
   }
   .site-header .logo {
-    width: 84px;
-    height: 23px;
-    top: 18px;
-    left: 18px;
+    width: 150px;
+    
+    top: 30px;
+    left: 10px;
   }
   
   .site-header.sticky {
