@@ -4728,7 +4728,7 @@ input[type="radio"]:focus {
   .intro .data .section-header .text-small {
     font-size: 24px;
     margin: 10px 0 0;
-    text-align: center;
+    white-space: nowrap;
   }
   .intro .data .section-content {
     max-width: 310px;
@@ -5062,6 +5062,10 @@ input[type="radio"]:focus {
     display: flex;
     position: absolute;
     top: 13px;
+  }
+  #key_text{
+    display: flex;
+    flex-direction: column;
   }
 }
 /* 擴充 */
