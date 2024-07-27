@@ -4726,8 +4726,9 @@ input[type="radio"]:focus {
     color: #3a726d;
   }
   .intro .data .section-header .text-small {
-    font-size: 15px;
+    font-size: 24px;
     margin: 10px 0 0;
+    text-align: center;
   }
   .intro .data .section-content {
     max-width: 310px;
@@ -5348,6 +5349,9 @@ input[type="radio"]:focus {
   #signUp{
     padding-bottom: 0 !important;
     padding-top: 120px !important;
+  }
+  .activity{
+    height: 400px !important;
   }
 }
 .section.kv {
