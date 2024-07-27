@@ -2733,7 +2733,7 @@ input[type="radio"]:focus {
 }
 .main-menu .active,
 .main-menu .mPS2id-highlight-first {
-  color: #00ff9f;
+  /* color: #00ff9f; */
 }
 
 .share-menu {
@@ -2980,7 +2980,7 @@ input[type="radio"]:focus {
   padding-top: 25px;
 }
 .intro .top-block .heading {
-  font-size: 30px;
+  font-size: 23px;
   line-height: 48px;
   font-weight: 700;
   color: #000;
@@ -3038,7 +3038,7 @@ input[type="radio"]:focus {
 }
 .intro .data .item {
   width: 30%;
-  margin: 15px;
+  margin: 15px 0px;
   position: relative;
   color: #fff;
   text-align: center;
@@ -3052,7 +3052,7 @@ input[type="radio"]:focus {
 }
 .intro .data .image {
   overflow: hidden;
-  height: 211px;
+  height: 245px;
   position: relative;
 }
 .intro .data .image:before {
@@ -3132,8 +3132,8 @@ input[type="radio"]:focus {
   background-position: center bottom;
 }
 .speaker .container {
-  padding-top: 85px;
-  padding-bottom: 120px;
+  padding-top: 0px;
+  padding-bottom: 150px;
 }
 .speaker .section-header {
   margin-bottom: 40px;
@@ -3537,7 +3537,7 @@ input[type="radio"]:focus {
 }
 
 .partner .container {
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 70px;
 }
 .partner .section-header {
@@ -3854,7 +3854,7 @@ input[type="radio"]:focus {
   margin: 60px auto;
 }
 .speaker-modal .modal-content {
-  padding: 25px 40px 75px;
+  padding: 10px;
   background-color: #00605f;
   background-image: url(../images/speaker-modal-bg.jpg);
   background-size: 100% auto;
@@ -3882,7 +3882,7 @@ input[type="radio"]:focus {
 }
 .speaker-modal .grid-right {
   width: calc(100% - 205px);
-  padding-left: 36px;
+  padding-left: 10px;
 }
 .speaker-modal .image {
   border-radius: 50%;
@@ -4650,6 +4650,7 @@ input[type="radio"]:focus {
 
   .intro {
     z-index: 2;
+    padding-bottom: 100px !important;
   }
   .intro .bg {
     background-image: url(../images/intro-bg_s.jpg);
@@ -4765,8 +4766,6 @@ input[type="radio"]:focus {
   }
   .speaker .container {
     padding: 0;
-    padding-top: 50px;
-    padding-bottom: 0px;
   }
   .speaker .section-header {
     margin-bottom: 20px;
@@ -5346,6 +5345,10 @@ input[type="radio"]:focus {
     left: 0;
     /* 確保在手機上適當的位置 */
   }
+  #signUp{
+    padding-bottom: 0 !important;
+    padding-top: 120px !important;
+  }
 }
 .section.kv {
   cursor: pointer;
@@ -5357,4 +5360,7 @@ input[type="radio"]:focus {
 .modal .modal-dialog .modal-content .close{
   display: flex;
   flex-direction: column-reverse;
+}
+#signUp{
+  padding-bottom: 100px;
 }
