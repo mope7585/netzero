@@ -2849,7 +2849,8 @@ input[type="radio"]:focus {
   margin-top: 4px;
 }
 .section .section-header span {
-  max-width: calc(100% - 37px - 16px);
+    max-width: calc(100% - 37px - 16px);
+    text-align: center;
 }
 .section .section-content {
   margin: 0 auto;
@@ -3216,10 +3217,11 @@ input[type="radio"]:focus {
 }
 .speaker .main-text,
 .speaker1 .main-text{
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 500;
-  margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #00BB9B;
 }
 .speaker .main-text2,
 .speaker1 .main-text2 {
@@ -4262,10 +4264,10 @@ input[type="radio"]:focus {
     max-width: 100%;
   }
   .site-header .logo {
-    width: 84px;
-    height: 23px;
-    top: 18px;
-    left: 18px;
+    width: 150px;
+    
+    top: 30px;
+    left: 30px;
   }
   
   .site-header.sticky {
