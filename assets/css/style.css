@@ -2610,7 +2610,7 @@ input[type="radio"]:focus {
   background-color: #fff;
 }
 .site-header .container {
-  max-width: 1280px;
+  /* max-width: 1280px; */
 }
 .site-header .logo {
   background-repeat: no-repeat;
@@ -2643,6 +2643,8 @@ input[type="radio"]:focus {
   position: absolute;
   top: 10px;
   right: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 .site-menu .menu-close {
   display: none;
@@ -2671,7 +2673,7 @@ input[type="radio"]:focus {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 .main-menu li {
   position: relative;
@@ -2849,7 +2851,8 @@ input[type="radio"]:focus {
   margin-top: 4px;
 }
 .section .section-header span {
-  max-width: calc(100% - 37px - 16px);
+    max-width: calc(100% - 37px - 16px);
+    text-align: center;
 }
 .section .section-content {
   margin: 0 auto;
@@ -2998,7 +3001,7 @@ input[type="radio"]:focus {
   margin-top: 20px;
 }
 .intro .data .section-header {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -3216,10 +3219,11 @@ input[type="radio"]:focus {
 }
 .speaker .main-text,
 .speaker1 .main-text{
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 500;
-  margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #00BB9B;
 }
 .speaker .main-text2,
 .speaker1 .main-text2 {
@@ -4262,10 +4266,10 @@ input[type="radio"]:focus {
     max-width: 100%;
   }
   .site-header .logo {
-    width: 84px;
-    height: 23px;
-    top: 18px;
-    left: 18px;
+    /* width: 150px; */
+    
+    top: 30px;
+    left: 30px;
   }
   
   .site-header.sticky {
@@ -4650,7 +4654,7 @@ input[type="radio"]:focus {
 
   .intro {
     z-index: 2;
-    padding-bottom: 100px !important;
+    padding-bottom: 0px !important;
   }
   .intro .bg {
     background-image: url(../images/intro-bg_s.jpg);
@@ -4722,7 +4726,7 @@ input[type="radio"]:focus {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     color: #3a726d;
   }
   .intro .data .section-header .text-small {
@@ -5336,13 +5340,19 @@ input[type="radio"]:focus {
 /* 電腦螢幕大小 */
 .logo_box {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 13px;
-  left: -140px;
+  left: 0px;
 }
 
 /* 手機螢幕大小 */
 @media (max-width: 768px) {
+  .logo-text{
+    font-size: 14px !important;
+    line-height: 27px;
+    padding-left: 0 !important;
+  }
+
   .logo_box {
     display: flex;
     position: absolute;
@@ -5372,3 +5382,17 @@ input[type="radio"]:focus {
 #signUp{
   padding-bottom: 100px;
 }
+.item_btn{
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  margin: auto;
+  width: 130px;
+  background-color: #00605f;
+  font-weight: 600;
+  color: #fff;
+}
+.item_btn p{
+  margin: auto;
+}
+

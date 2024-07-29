@@ -251,6 +251,71 @@ function swiper() {
         }
     }
   });
+    var swiper4 = new Swiper('.fourth-swiper', {
+    slidesPerView: "auto",
+    slidesPerGroup: 4,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    autoHeight: false,
+    navigation: {
+        nextEl: '.fourth-swiper-button-next',
+        prevEl: '.fourth-swiper-button-prev',
+    },
+    pagination: {
+        el: ".fourth-swiper .swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerGroup: 1,
+        },
+        480: {
+            slidesPerGroup: 1,
+        },
+        640: {
+            slidesPerGroup: 1,
+        },
+        1080: {
+            slidesPerGroup: 3,
+        },
+        1081: {
+            slidesPerGroup: 4,
+        }
+    }
+  });
+
+  var swiper5 = new Swiper('.fifth-swiper', {
+    slidesPerView: "auto",
+    slidesPerGroup: 4,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    autoHeight: false,
+    navigation: {
+        nextEl: '.fifth-swiper-button-next',
+        prevEl: '.fifth-swiper-button-prev',
+    },
+    pagination: {
+        el: ".fifth-swiper .swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        320: {
+            slidesPerGroup: 1,
+        },
+        480: {
+            slidesPerGroup: 1,
+        },
+        640: {
+            slidesPerGroup: 1,
+        },
+        1080: {
+            slidesPerGroup: 3,
+        },
+        1081: {
+            slidesPerGroup: 4,
+        }
+    }
+  });
 }
 
 
