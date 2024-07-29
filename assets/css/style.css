@@ -4266,10 +4266,10 @@ input[type="radio"]:focus {
     max-width: 100%;
   }
   .site-header .logo {
-    /* width: 150px; */
-    
-    top: 30px;
-    left: 30px;
+    width: 84px;
+    height: 23px;
+    top: 18px;
+    left: 18px;
   }
   
   .site-header.sticky {
@@ -5382,17 +5382,3 @@ input[type="radio"]:focus {
 #signUp{
   padding-bottom: 100px;
 }
-.item_btn{
-  border-radius: 5px;
-  border: none;
-  display: flex;
-  margin: auto;
-  width: 130px;
-  background-color: #00605f;
-  font-weight: 600;
-  color: #fff;
-}
-.item_btn p{
-  margin: auto;
-}
-
