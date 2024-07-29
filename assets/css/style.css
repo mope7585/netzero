@@ -5397,4 +5397,6 @@ input[type="radio"]:focus {
 .item_btn p{
   margin: auto;
 }
-
+#exclusive{
+  justify-content: center;
+}
