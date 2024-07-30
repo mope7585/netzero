@@ -3844,7 +3844,7 @@ input[type="radio"]:focus {
 }
 
 .activity {
-  background-color: #abd5cb;
+  background-color: #00605f;
 }
 
 .activity .container {
@@ -6205,7 +6205,7 @@ only screen and (max-width: 767px) {
     padding-top: 120px !important;
   }
   .activity{
-    height: 400px !important;
+    height: 500px !important;
   }
   
 }
