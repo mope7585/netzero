@@ -4431,7 +4431,7 @@ input[type="radio"]:focus {
 }
 
 .speaker-modal .modal-content {
-  padding: 10px;
+  padding: 20px;
   background-color: #abd5cb;
   background-image: url(../images/speaker-modal-bg.jpg);
   background-size: 100% auto;
