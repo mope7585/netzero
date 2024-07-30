@@ -3399,7 +3399,7 @@ input[type="radio"]:focus {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   opacity: 1;
 }
 
@@ -3607,7 +3607,7 @@ input[type="radio"]:focus {
 }
 
 .speaker .section-header {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .speaker .section-content {
@@ -3732,8 +3732,8 @@ input[type="radio"]:focus {
 }
 
 .agenda .container {
-  padding-top: 70px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 150px;
   max-width: 1160px;
 }
 
@@ -3844,7 +3844,7 @@ input[type="radio"]:focus {
 }
 
 .activity {
-  background-color: #00605f;
+  background-color: #abd5cb;
 }
 
 .activity .container {
@@ -4077,7 +4077,7 @@ input[type="radio"]:focus {
 }
 
 .partner .section-header {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   color: #3a726d;
   ;
 }
@@ -4129,12 +4129,12 @@ input[type="radio"]:focus {
 }
 
 .traffic .container {
-  padding-top: 50px;
+  /* padding-top: 50px; */
   padding-bottom: 90px;
 }
 
 .traffic .section-header {
-  margin-bottom: 35px;
+  margin-bottom: 80px;
   color: #3a726d;
   ;
 }
@@ -5376,8 +5376,8 @@ only screen and (max-width: 767px) {
   }
 
   .intro .container {
-    /* padding-top: 48px; */
-    padding-bottom: 35px;
+    padding-top: 0px;
+    padding-bottom:55px;
   }
 
   .intro .top-block {
@@ -5507,7 +5507,7 @@ only screen and (max-width: 767px) {
   }
 
   .speaker .section-header {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .speaker .landing-swiper-container {
@@ -5535,7 +5535,7 @@ only screen and (max-width: 767px) {
   }
 
   .agenda .container {
-    padding-top: 55px;
+    padding-top: 15px;
     padding-bottom: 50px;
   }
 
@@ -5655,7 +5655,7 @@ only screen and (max-width: 767px) {
   }
 
   .partner .container {
-    padding-top: 35px;
+    /* padding-top: 35px; */
     padding-bottom: 35px;
   }
 
@@ -5684,7 +5684,7 @@ only screen and (max-width: 767px) {
   }
 
   .traffic .section-header {
-    margin-bottom: 25px;
+    margin-bottom: 60px;
   }
 
   .traffic .grid {
@@ -5869,6 +5869,15 @@ only screen and (max-width: 767px) {
   #key_text {
     display: flex;
     flex-direction: column;
+  }
+  #speaker{
+    margin-bottom: 50px;
+  }
+  #statistics-2_s h2{
+    padding-bottom: 20px;
+  }
+  #two .container{
+    margin-bottom: 80px !important;
   }
 }
 
@@ -6148,6 +6157,9 @@ only screen and (max-width: 767px) {
   .swiper-pagination {
     bottom: 20px;
   }
+  #text_1{
+    padding: 0px 0px !important;
+  }
 }
 
 .description {
@@ -6232,4 +6244,17 @@ only screen and (max-width: 767px) {
 
 #exclusive {
   justify-content: center;
+}
+.modal-content .note ol li{
+  color: #00605f;
+}
+
+#text_1{
+  padding: 0 50px;
+}
+#four{
+  margin-top: 80px !important;
+}
+#speaker .container h2{
+  margin-bottom: 60px !important;
 }
