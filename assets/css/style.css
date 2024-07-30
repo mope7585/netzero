@@ -3399,7 +3399,7 @@ input[type="radio"]:focus {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   opacity: 1;
 }
 
@@ -3427,15 +3427,15 @@ input[type="radio"]:focus {
 .intro .top-block .grid-right {
   /* width: calc(100% - 36.036036036%); */
   /* padding-left: 75px; */
-  padding-top: 25px;
+  padding-top: 60px;
 }
 
 .intro .top-block .heading {
   font-size: 23px;
-  line-height: 48px;
+  line-height: 28px;
   font-weight: 700;
   color: #000;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   letter-spacing: .025em;
 }
 
@@ -3733,7 +3733,7 @@ input[type="radio"]:focus {
 
 .agenda .container {
   padding-top: 40px;
-  padding-bottom: 150px;
+  padding-bottom: 70px;
   max-width: 1160px;
 }
 
@@ -4426,12 +4426,12 @@ input[type="radio"]:focus {
 }
 
 .speaker-modal .modal-dialog {
-  max-width: 920px;
+  max-width: 850px;
   margin: 60px auto;
 }
 
 .speaker-modal .modal-content {
-  padding: 20px;
+  padding: 33px;
   background-color: #abd5cb;
   background-image: url(../images/speaker-modal-bg.jpg);
   background-size: 100% auto;
@@ -5331,7 +5331,7 @@ only screen and (max-width: 767px) {
 
   .section .section-header {
     font-size: 36px;
-    line-height: 48px;
+    line-height: 60px;
   }
 
   .section .section-header .icon-arrow {
@@ -5377,7 +5377,7 @@ only screen and (max-width: 767px) {
 
   .intro .container {
     padding-top: 0px;
-    padding-bottom:55px;
+    padding-bottom:30px;
   }
 
   .intro .top-block {
@@ -5391,7 +5391,7 @@ only screen and (max-width: 767px) {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: #3a726d;
   }
 
@@ -5431,7 +5431,7 @@ only screen and (max-width: 767px) {
 
   .intro .top-block .heading {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 28px;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -6040,9 +6040,9 @@ only screen and (max-width: 767px) {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -5px;
+  bottom: -15px;
   /* 根据需要调整位置 */
-  height: 4px;
+  height: 5px;
   /* 底线高度 */
   background-image: linear-gradient(to right, rgb(84, 183, 155), rgb(34, 127, 179));
 }
@@ -6205,7 +6205,7 @@ only screen and (max-width: 767px) {
     padding-top: 120px !important;
   }
   .activity{
-    height: 500px !important;
+    height: 520px !important;
   }
   
 }
@@ -6250,7 +6250,7 @@ only screen and (max-width: 767px) {
 }
 
 #text_1{
-  padding: 0 50px;
+  padding: 18px 150px;
 }
 #four{
   margin-top: 80px !important;
