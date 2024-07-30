@@ -3693,6 +3693,7 @@ input[type="radio"]:focus {
   padding: 20px;
   min-height: 126px;
   background-color: #fff;
+  height: 135px;
 }
 
 .speaker .description,
@@ -5390,7 +5391,7 @@ only screen and (max-width: 767px) {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     color: #3a726d;
   }
 
@@ -6194,6 +6195,7 @@ only screen and (max-width: 767px) {
   .activity{
     height: 400px !important;
   }
+  
 }
 
 .section.kv {
