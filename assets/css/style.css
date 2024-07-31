@@ -6278,7 +6278,7 @@ only screen and (max-width: 767px) {
   width: 150px;
   z-index: 1;
   position: absolute;
-  right: 0;
+  right: 15px;
   top: 0;
   bottom: 0;
   display: flex;
@@ -6321,9 +6321,10 @@ only screen and (max-width: 767px) {
 .grid_bottom5_1{
   margin-top: 100px;
   background-color: #fff;
-  padding: 50px 30px 30px;
+  padding: 50px 30px 100px 30px;
 }
 .grid_bottom5_2{
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  background-color: #fff;
   padding: 50px 30px 30px;
 }
