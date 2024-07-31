@@ -6258,3 +6258,72 @@ only screen and (max-width: 767px) {
 #speaker .container h2{
   margin-bottom: 60px !important;
 }
+/* 諮詢門診手機板 */
+.modal-content_s{
+  color: #00605f;
+  background-color: #abd5cb;
+  border-radius: 20px;
+}
+.grid_img_box{
+  position: absolute;
+  width: 150px;
+  right: 15px;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.grid_img_box5{
+  width: 150px;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+} 
+.grid_img,
+.grid_img_box img,
+.grid_img_box5 img{
+  border-radius: 100%;
+}
+.grid .grid_top{
+  margin: 50px 30px 50px 30px;
+}
+.grid_top > h1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.grid_top p{
+  font-weight: 600;
+}
+.grid_bottom{
+  position: relative;
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 50px 30px 30px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.grid_bottom_title{
+  margin-bottom: 10px;
+}
+.grid_bottom_title > h2{
+  color: #00605f;
+  font-weight: 900;
+}
+.grid_bottom5_1{
+  margin-top: 100px;
+  background-color: #fff;
+  padding: 50px 30px 30px;
+}
+.grid_bottom5_2{
+  margin-top: 50px;
+  padding: 50px 30px 30px;
+}
