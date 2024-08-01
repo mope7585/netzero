@@ -3690,7 +3690,7 @@ input[type="radio"]:focus {
   background-image: url(../images/speaker-item-bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding: 20px;
+  padding: 16px;
   min-height: 126px;
   background-color: #fff;
   height: 135px;
@@ -4432,7 +4432,7 @@ input[type="radio"]:focus {
 
 .speaker-modal .modal-content {
   padding: 33px;
-  background-color: #fff;
+  background-color: #ecfff1;
   background-image: url(../images/speaker-modal-bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
