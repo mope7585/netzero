@@ -3690,7 +3690,7 @@ input[type="radio"]:focus {
   background-image: url(../images/speaker-item-bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding: 20px;
+  padding: 16px;
   min-height: 126px;
   background-color: #fff;
   height: 135px;
@@ -4431,13 +4431,13 @@ input[type="radio"]:focus {
 }
 
 .speaker-modal .modal-content {
-  padding: 33px;
-  background-color: #fff;
+  padding: 27px;
+  background-color: #c2e1e6;
   background-image: url(../images/speaker-modal-bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center bottom;
-  color: #00605f;
+  color: #212529;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: .025em;
@@ -5169,7 +5169,7 @@ only screen and (max-width: 767px) {
 
   .speaker-modal .modal-content {
     padding: 40px 25px 84px;
-    background-image: url(../images/speaker-modal-bg_s.jpg);
+    background-image: url(../mages/modal-bg_s.jpg);
   }
 
   .speaker-modal .grid {
@@ -6261,7 +6261,7 @@ only screen and (max-width: 767px) {
 /* 諮詢門診手機板 */
 .modal-content_s{
   color: #00605f;
-  background-color: #abd5cb;
+  background-color: #c2e1e6;
   border-radius: 20px;
 }
 .grid_img_box{
