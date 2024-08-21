@@ -181,139 +181,139 @@ function check_ans() {
 
 var flag = true;
 
-function final() {
-    check_ans().then(function (data) {
-        console.log(data);
-        // return false;
-        var _tk_uuid_frck = localStorage.getItem('_tk_uuid_frck');
-        var from = "";
-        var fromdata = getUrlVars()["from"];
-        if (fromdata) {
-            fromarray = fromdata.split('#');
-            from = fromarray[0];
-        }
+// function final() {
+//     check_ans().then(function (data) {
+//         console.log(data);
+//         // return false;
+//         var _tk_uuid_frck = localStorage.getItem('_tk_uuid_frck');
+//         var from = "";
+//         var fromdata = getUrlVars()["from"];
+//         if (fromdata) {
+//             fromarray = fromdata.split('#');
+//             from = fromarray[0];
+//         }
 
-        if (from === undefined) {
-            from = '';
-        }
-        var eventid = data['event'];
-        if (flag) {
-            flag = false;
-            $.ajax({
-                url: "https://www.gvm.com.tw/newevent/record_v2",
-                type: "POST",
-                dataType: "json",
-                data: {
-                    "eventid": eventid,
-                    "content": [{
-                        "name": data['name'],
-                        "Q1": data['Q1'],
-                        "mobile": data['mobile'],
-                        "email": data['email'],
-                        "Q2": data['Q2'],
-                        "corp": data['corp'],
-                        "title": data['title'],
-                        "Q3": data['Q3'],
-                        "from": from,
-                        "str1": _tk_uuid_frck,
-                    }],
-                    "recaptcha_response": data['recaptcha_response'],
+//         if (from === undefined) {
+//             from = '';
+//         }
+//         var eventid = data['event'];
+//         if (flag) {
+//             flag = false;
+//             $.ajax({
+//                 url: "https://www.gvm.com.tw/newevent/record_v2",
+//                 type: "POST",
+//                 dataType: "json",
+//                 data: {
+//                     "eventid": eventid,
+//                     "content": [{
+//                         "name": data['name'],
+//                         "Q1": data['Q1'],
+//                         "mobile": data['mobile'],
+//                         "email": data['email'],
+//                         "Q2": data['Q2'],
+//                         "corp": data['corp'],
+//                         "title": data['title'],
+//                         "Q3": data['Q3'],
+//                         "from": from,
+//                         "str1": _tk_uuid_frck,
+//                     }],
+//                     "recaptcha_response": data['recaptcha_response'],
 
-                    "limit_ins": 0
-                },
-                success: function (pdata) {
-                    if (pdata.status) {
-                        var dt = new Date();
-                        var dt_string = dt.getFullYear() + '-' + (dt.getMonth() + 1) + '-' + dt
-                            .getDate();
-                        gvm_tracking.tracking_anchor = '2024CathaySummit';
-                        gvm_tracking.reg_title = '2024 國泰永續金融暨氣候變遷高峰論壇';
-                        gvm_tracking.reg_id = pdata.insert_id;
-                        gvm_tracking.name = data['name'];
-                        gvm_tracking.mobile = data['mobile'];
-                        gvm_tracking.email = data['email'];
-                        gvm_tracking.corp = data['corp'];
-                        gvm_tracking.title = data['title'];
-                        gvm_tracking.from = from;
-                        gvm_tracking.reg_day = dt_string;
-                        gvm_tracking.dp_code = 'gvm';
-                        gvm_tracking.tracking_url = encodeURIComponent(location.href);
-                        gvm_tracking.tracking_referrer = encodeURIComponent(document.referrer);
-                        gvm_tracking.send();
-                        var show_id = 2;
-                        if (eventid == 477) {
-                            show_id = 1;
-                        }
-                        btn_anm(show_id);
-                        // location.href = pdata.next_url;
-                    } else {
-                        if (pdata.errcode == 'duplicate') {
-                            alert('請勿重複報名，感謝您！');
-                        } else {
-                            alert(pdata.errmsg);
-                        }
-                        return false;
-                    }
-                    grecaptcha.reset();
-                },
-                error: function (xhr, ajaxOptions, thrownError) {
-                    console.log(xhr.responseText);
-                }
-            });
-            flag = true;
-        }
-    }, function (input_name, type) {
-        var err = '';
-        switch (type) {
-            case 'recaptcha_response': {
-                err = '請勾選[我不是機器人]。';
-                break;
-            }
-            case 'name': {
-                err = '請填寫姓名！';
-                break;
-            }
-            case 'Q1': {
-                err = '請選擇是否需要申請董監事進修時數！';
-                break;
-            }
-            case 'mobile': {
-                err = '請填寫手機！';
-                break;
-            }
-            case 'email': {
-                err = '請填寫電子信箱！';
-                break;
-            }
-            case 'corp': {
-                err = '請填寫公司/學校名稱！';
-                break;
-            }
-            case 'title': {
-                err = '請填寫部門職稱/學校科系！';
-                break;
-            }
-            case 'email_wrong': {
-                err = '請填寫正確E-mail！';
-                break;
-            }
-            case 'mobile_wrong': {
-                err = '請填寫正確手機格式！';
-                break;
-            }
-            case 'Privacy': {
-                err = '請勾選我已詳細閱讀並同意遠見天下文化事業群與國泰集團個資保護聲明之隱私權政策及個資保護聲明內容所有條款。';
-                // $('#checkbox')[0].focus();
-                break;
-            }
-        }
-        alert(err);
-        if (input_name != 'Privacy') {
-            $("input[name='" + input_name + "']").focus();
-        }
-        return;
-    });
-}
+//                     "limit_ins": 0
+//                 },
+//                 success: function (pdata) {
+//                     if (pdata.status) {
+//                         var dt = new Date();
+//                         var dt_string = dt.getFullYear() + '-' + (dt.getMonth() + 1) + '-' + dt
+//                             .getDate();
+//                         gvm_tracking.tracking_anchor = '2024CathaySummit';
+//                         gvm_tracking.reg_title = '2024 國泰永續金融暨氣候變遷高峰論壇';
+//                         gvm_tracking.reg_id = pdata.insert_id;
+//                         gvm_tracking.name = data['name'];
+//                         gvm_tracking.mobile = data['mobile'];
+//                         gvm_tracking.email = data['email'];
+//                         gvm_tracking.corp = data['corp'];
+//                         gvm_tracking.title = data['title'];
+//                         gvm_tracking.from = from;
+//                         gvm_tracking.reg_day = dt_string;
+//                         gvm_tracking.dp_code = 'gvm';
+//                         gvm_tracking.tracking_url = encodeURIComponent(location.href);
+//                         gvm_tracking.tracking_referrer = encodeURIComponent(document.referrer);
+//                         gvm_tracking.send();
+//                         var show_id = 2;
+//                         if (eventid == 477) {
+//                             show_id = 1;
+//                         }
+//                         btn_anm(show_id);
+//                         // location.href = pdata.next_url;
+//                     } else {
+//                         if (pdata.errcode == 'duplicate') {
+//                             alert('請勿重複報名，感謝您！');
+//                         } else {
+//                             alert(pdata.errmsg);
+//                         }
+//                         return false;
+//                     }
+//                     grecaptcha.reset();
+//                 },
+//                 error: function (xhr, ajaxOptions, thrownError) {
+//                     console.log(xhr.responseText);
+//                 }
+//             });
+//             flag = true;
+//         }
+//     }, function (input_name, type) {
+//         var err = '';
+//         switch (type) {
+//             case 'recaptcha_response': {
+//                 err = '請勾選[我不是機器人]。';
+//                 break;
+//             }
+//             case 'name': {
+//                 err = '請填寫姓名！';
+//                 break;
+//             }
+//             case 'Q1': {
+//                 err = '請選擇是否需要申請董監事進修時數！';
+//                 break;
+//             }
+//             case 'mobile': {
+//                 err = '請填寫手機！';
+//                 break;
+//             }
+//             case 'email': {
+//                 err = '請填寫電子信箱！';
+//                 break;
+//             }
+//             case 'corp': {
+//                 err = '請填寫公司/學校名稱！';
+//                 break;
+//             }
+//             case 'title': {
+//                 err = '請填寫部門職稱/學校科系！';
+//                 break;
+//             }
+//             case 'email_wrong': {
+//                 err = '請填寫正確E-mail！';
+//                 break;
+//             }
+//             case 'mobile_wrong': {
+//                 err = '請填寫正確手機格式！';
+//                 break;
+//             }
+//             case 'Privacy': {
+//                 err = '請勾選我已詳細閱讀並同意遠見天下文化事業群與國泰集團個資保護聲明之隱私權政策及個資保護聲明內容所有條款。';
+//                 // $('#checkbox')[0].focus();
+//                 break;
+//             }
+//         }
+//         alert(err);
+//         if (input_name != 'Privacy') {
+//             $("input[name='" + input_name + "']").focus();
+//         }
+//         return;
+//     });
+// }
 
 function get_cookies_array() {
 
