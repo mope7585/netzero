@@ -3637,19 +3637,8 @@ input[type="radio"]:focus {
   cursor: pointer;
   margin: 20px 15px;
   display: block;
-  border-radius: 20px;
   overflow: hidden;
   color: #fff;
-}
-
-.speaker .item:active {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.45);
-}
-
-@media (hover: hover) {
-  .speaker .item:hover {
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.45);
-  }
 }
 
 .speaker .image {
@@ -3882,7 +3871,6 @@ input[type="radio"]:focus {
 .activity .note h4 {
   width: 112px;
   height: 38px;
-  border-radius: 38px;
   background-color: #18978F;
   color: #fff;
   font-size: 18px;
