@@ -3211,6 +3211,7 @@ input[type="radio"]:focus {
   line-height: 30px;
   letter-spacing: .025em;
   color: #666;
+  
 }
 
 .section.in-view {
@@ -3844,7 +3845,7 @@ input[type="radio"]:focus {
 }
 
 .activity {
-  background-color: #00605f;
+  background-color: #e6ebe5;
 }
 
 .activity .container {
@@ -3874,7 +3875,7 @@ input[type="radio"]:focus {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: .025em;
-  color: #fff;
+  color: #666;
   text-align: justify;
 }
 
@@ -3882,7 +3883,7 @@ input[type="radio"]:focus {
   width: 112px;
   height: 38px;
   border-radius: 38px;
-  background-color: #01bc85;
+  background-color: #18978F;
   color: #fff;
   font-size: 18px;
   line-height: 38px;
