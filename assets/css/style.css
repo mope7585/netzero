@@ -3272,7 +3272,7 @@ input[type="radio"]:focus {
   animation-delay: 1.5s;
 }
 
-.kv {
+.qwedd224 {
   position: relative;
   width: 100%;
   z-index: 0;
@@ -3281,7 +3281,7 @@ input[type="radio"]:focus {
   height: 730px;
 }
 
-.kv .bg {
+.qwedd224 .bg {
   background-image: url(../images/web-08.png);
   background-position: center top;
   background-size: cover;
@@ -3290,12 +3290,12 @@ input[type="radio"]:focus {
 
 }
 
-.kv .container {
+.qwedd224 .container {
   padding: 0;
   max-width: 1300px;
 }
 
-.kv .layer {
+.qwedd224 .layer {
   position: absolute;
   top: 0;
   left: 0;
@@ -3308,33 +3308,33 @@ input[type="radio"]:focus {
   font-size: 0;
 }
 
-.kv .layer img {
+.qwedd224 .layer img {
   width: 100%;
   height: auto;
 }
 
-.kv.active .kv-slogan {
+.qwedd224.active .qwedd224-slogan {
   -moz-animation: fadeInUp 0.8s both;
   -webkit-animation: fadeInUp 0.8s both;
   animation: fadeInUp 0.8s both;
   animation-delay: .1s;
 }
 
-.kv.active .kv-sub {
+.qwedd224.active .qwedd224-sub {
   -moz-animation: fadeInUp 0.8s both;
   -webkit-animation: fadeInUp 0.8s both;
   animation: fadeInUp 0.8s both;
   animation-delay: .4s;
 }
 
-.kv.active .kv-light {
+.qwedd224.active .qwedd224-light {
   -moz-animation: fadeIn 0.8s both;
   -webkit-animation: fadeIn 0.8s both;
   animation: fadeIn 0.8s both;
   animation-delay: .6s;
 }
 
-.kv.active .kv-light img {
+.qwedd224.active .qwedd224-light img {
   -moz-animation: fadeIn 2s both;
   -webkit-animation: fadeIn 2s both;
   animation: fadeIn 2s both;
@@ -4515,7 +4515,7 @@ only screen and (max-width: 767px) {
 }
 
 @media (max-width: 1300px) and (min-width: 751px) {
-  .kv .bg {
+  .qwedd224 .bg {
     background-size: cover;
     height: 400px;
   }
@@ -5009,11 +5009,11 @@ only screen and (max-width: 767px) {
     max-width: calc(100% - 32px - 10px);
   }
 
-  .kv {
+  .qwedd224 {
     height: 266px;
   }
 
-  .kv .bg {
+  .qwedd224 .bg {
     background-image: url(../images/web-08_s.png);
     /* background-size: 1024px auto; */
     height: 266px;
@@ -5022,7 +5022,7 @@ only screen and (max-width: 767px) {
     /* 這裡使用 cover 來自動調整圖片大小 */
   }
 
-  .kv .container {
+  .qwedd224 .container {
     padding: 0;
     max-width: 375px;
   }
@@ -5674,7 +5674,7 @@ only screen and (max-width: 767px) {
 }
 
 @media (max-width: 1300px) and (min-width: 751px) {
-  .kv {
+  .qwedd224 {
     height: 385px;
   }
 }
@@ -5713,7 +5713,7 @@ only screen and (max-width: 767px) {
   
 }
 
-.section.kv {
+.section.qwedd224 {
   cursor: pointer;
 }
 
