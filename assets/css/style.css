@@ -1,22 +1,4 @@
 @charset "UTF-8";
-
-/* -------------------------------------------------------------
-  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
-  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
-
-  List of CSS3 Sass Mixins File to be @imported and @included as you need
-
-  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
-  ENDING css files
-
-  note: All CSS3 Properties are being supported by Safari 5
-  more info: http://www.findmebyip.com/litmus/#css3-properties
-
-------------------------------------------------------------- */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html,
 body,
 div,
@@ -148,13 +130,6 @@ table {
   border-spacing: 0;
 }
 
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.5.2
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2017 Daniel Eden
- */
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -3374,27 +3349,27 @@ input[type="radio"]:focus {
   animation-direction: alternate-reverse;
 }
 
-.intro {
+.aa24587 {
   background: RGB (230, 236, 229);
 }
 
-.intro .bg {
+.aa24587 .bg {
   background-size: 1920px auto;
   background-position: center top;
   background-image: url(../images/intro-bg.jpg);
 }
 
-.intro .container {
+.aa24587 .container {
   padding-top: 80px;
   padding-bottom: 0px;
   max-width: 1150px;
 }
 
-.intro .top-block {
+.aa24587 .top-block {
   margin-bottom: 150px;
 }
 
-.intro .top-block .section-header {
+.aa24587 .top-block .section-header {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-justify-content: center;
@@ -3404,7 +3379,7 @@ input[type="radio"]:focus {
   opacity: 1;
 }
 
-.intro .top-block .section-content {
+.aa24587 .top-block .section-content {
   padding: 0;
   font-size: 18px;
   line-height: 30px;
@@ -3413,7 +3388,7 @@ input[type="radio"]:focus {
   opacity: 1;
 }
 
-.intro .top-block .grid {
+.aa24587 .top-block .grid {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -3421,17 +3396,17 @@ input[type="radio"]:focus {
   display: flex;
 }
 
-.intro .top-block .grid-left {
+.aa24587 .top-block .grid-left {
   width: 36.036036036%;
 }
 
-.intro .top-block .grid-right {
+.aa24587 .top-block .grid-right {
   /* width: calc(100% - 36.036036036%); */
   /* padding-left: 75px; */
   padding-top: 60px;
 }
 
-.intro .top-block .heading {
+.aa24587 .top-block .heading {
   font-size: 23px;
   line-height: 28px;
   font-weight: 700;
@@ -3440,20 +3415,20 @@ input[type="radio"]:focus {
   letter-spacing: .025em;
 }
 
-.intro .top-block .heading span {
+.aa24587 .top-block .heading span {
   display: inline-block;
 }
 
-.intro .top-block p {
+.aa24587 .top-block p {
   text-align: justify;
   font-size: 1.5rem;
 }
 
-.intro .top-block p+p {
+.aa24587 .top-block p+p {
   margin-top: 20px;
 }
 
-.intro .data .section-header {
+.aa24587 .data .section-header {
   /* margin-bottom: 40px; */
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -3464,7 +3439,7 @@ input[type="radio"]:focus {
   padding-bottom: 100px;
 }
 
-.intro .data .section-header .text-small {
+.aa24587 .data .section-header .text-small {
   /* font-size: 16px; */
   font-size: 30px;
   font-weight: 700;
@@ -3475,11 +3450,11 @@ input[type="radio"]:focus {
   letter-spacing: .025em;
 }
 
-.intro .data .section-content {
+.aa24587 .data .section-content {
   max-width: 1110px;
 }
 
-.intro .data .list {
+.aa24587 .data .list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -3497,7 +3472,7 @@ input[type="radio"]:focus {
   margin: -15px;
 }
 
-.intro .data .item {
+.aa24587 .data .item {
   width: 30%;
   margin: 15px 0px;
   position: relative;
@@ -3505,27 +3480,27 @@ input[type="radio"]:focus {
   text-align: center;
 }
 
-.intro .data .item-1 .image img,
-.intro .data .item-2 .image img,
-.intro .data .item-3 .image img,
-.intro .data .item-4 .image img,
-.intro .data .item-5 .image img {
+.aa24587 .data .item-1 .image img,
+.aa24587 .data .item-2 .image img,
+.aa24587 .data .item-3 .image img,
+.aa24587 .data .item-4 .image img,
+.aa24587 .data .item-5 .image img {
   opacity: 1;
 }
 
-.intro .data .image {
+.aa24587 .data .image {
   overflow: hidden;
   height: 245px;
   position: relative;
 }
 
-.intro .data .image:before {
+.aa24587 .data .image:before {
   content: "";
   padding-top: 100%;
   display: block;
 }
 
-.intro .data .image img {
+.aa24587 .data .image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -3536,7 +3511,7 @@ input[type="radio"]:focus {
   display: block;
 }
 
-.intro .data .content {
+.aa24587 .data .content {
   position: absolute;
   top: 0;
   left: 0;
@@ -3545,7 +3520,7 @@ input[type="radio"]:focus {
   padding-top: 50px;
 }
 
-.intro .data .top-text {
+.aa24587 .data .top-text {
   font-size: 35px;
   line-height: 30px;
   min-height: 60px;
@@ -3575,14 +3550,14 @@ input[type="radio"]:focus {
   font-weight: 900;
 }
 
-.intro .data .main-text {
+.aa24587 .data .main-text {
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
   filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.5));
 }
 
-.intro .data .text-large {
+.aa24587 .data .text-large {
   font-size: 80px;
   line-height: 1;
   font-family: "Poppins", sans-serif;
@@ -4627,151 +4602,6 @@ input[type="radio"]:focus {
   text-align: justify;
 }
 
-.video-modal .modal-dialog {
-  max-width: 920px;
-  margin: 0 auto;
-}
-
-.en-us .main-menu a {
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0;
-  font-weight: 500;
-  text-align: left;
-}
-
-.en-us .main-menu a span {
-  display: block;
-}
-
-.en-us .section {
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0;
-}
-
-.en-us .section .section-header {
-  font-size: 42px;
-  line-height: 56px;
-  letter-spacing: -.1px;
-}
-
-.en-us .section .section-header .icon-arrow {
-  width: 32px;
-  height: 32px;
-  background-size: 32px auto;
-  margin-right: 12px;
-}
-
-.en-us .section .section-header span {
-  max-width: calc(100% - 32px - 12px);
-}
-
-.en-us .intro .top-block .heading {
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0;
-}
-
-.en-us .intro .top-block .section-content {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0;
-}
-
-.en-us .intro .top-block p {
-  text-align: left;
-}
-
-.en-us .intro .data .content {
-  padding-top: 32px;
-}
-
-.en-us .intro .data .top-text {
-  font-size: 18px;
-  line-height: 24px;
-  padding: 0 15px;
-  padding-top: 15px;
-}
-
-.en-us .speaker .sub-text {
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.en-us .agenda .tabs .btn {
-  padding: 2px 0;
-  line-height: 20px;
-  font-size: 18px;
-}
-
-.en-us .agenda .top-text {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.en-us .activity .note {
-  text-align: left;
-}
-
-.en-us .activity .note h4 {
-  width: 72px;
-}
-
-.en-us .activity .note ol {
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.en-us .registration .btn-submit .sprite {
-  opacity: 0;
-  background-image: url(../images/en/btn-submit_sprites.png);
-}
-
-.en-us .registration .form-label {
-  text-transform: none;
-}
-
-.en-us .registration .form-section-break {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.en-us .registration .form-section-break .form-label {
-  width: 100%;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-
-.en-us .registration .form-section-break .form-content {
-  width: 100%;
-}
-
-.en-us .speaker-modal .info {
-  display: block;
-}
-
-.en-us .speaker-modal .info+.info {
-  border-top: 1px solid #fff;
-}
-
-.en-us .speaker-modal .info+.info .info-right {
-  border-top: 0;
-  padding-top: 0;
-}
-
-.en-us .speaker-modal .info-left {
-  width: 100%;
-}
-
-.en-us .speaker-modal .info-left h4 {
-  width: 120px;
-  margin-bottom: 5px;
-}
-
-.en-us .speaker-modal .info-right {
-  width: 100%;
-}
 
 .floating {
   animation-name: floating;
@@ -4841,7 +4671,7 @@ only screen and (max-width: 767px) {
     height: 400px;
   }
 
-  .intro .bg {
+  .aa24587 .bg {
     background-size: 147.692307692vw auto;
   }
 
@@ -4859,23 +4689,23 @@ only screen and (max-width: 767px) {
 }
 
 @media (max-width: 1110px) and (min-width: 751px) {
-  .intro .data .content {
+  .aa24587 .data .content {
     padding-top: 3.24vw;
   }
 
-  .intro .data .top-text {
+  .aa24587 .data .top-text {
     font-size: 2.16vw;
     line-height: 2.7vw;
     min-height: 5.4vw;
     margin-bottom: 1.35vw;
   }
 
-  .intro .data .main-text {
+  .aa24587 .data .main-text {
     font-size: 3.24vw;
     line-height: 4.32vw;
   }
 
-  .intro .data .text-large {
+  .aa24587 .data .text-large {
     font-size: 7.2vw;
   }
 
@@ -5348,28 +5178,28 @@ only screen and (max-width: 767px) {
     max-width: 375px;
   }
 
-  .intro {
+  .aa24587 {
     z-index: 2;
     padding-bottom: 0px !important;
   }
 
-  .intro .bg {
+  .aa24587 .bg {
     background-image: url(../images/intro-bg_s.jpg);
     background-size: 1024px auto;
     height: 1485px;
   }
 
-  .intro .container {
+  .aa24587 .container {
     padding-top: 0px;
     padding-bottom:30px;
   }
 
-  .intro .top-block {
+  .aa24587 .top-block {
     max-width: 330px;
     margin: 0 auto 70px;
   }
 
-  .intro .top-block .section-header {
+  .aa24587 .top-block .section-header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
@@ -5379,15 +5209,15 @@ only screen and (max-width: 767px) {
     color: #3a726d;
   }
 
-  .intro .top-block .section-content {
+  .aa24587 .top-block .section-content {
     line-height: 24px;
   }
 
-  .intro .top-block .grid {
+  .aa24587 .top-block .grid {
     display: block;
   }
 
-  .intro .top-block .grid-left {
+  .aa24587 .top-block .grid-left {
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -5402,29 +5232,29 @@ only screen and (max-width: 767px) {
     padding-right: 25px;
   }
 
-  .intro .top-block .grid-left img {
+  .aa24587 .top-block .grid-left img {
     max-width: 150px;
     margin: 0;
   }
 
-  .intro .top-block .grid-right {
+  .aa24587 .top-block .grid-right {
     width: 100%;
     padding-left: 0;
     /* padding-top: 120px; */
   }
 
-  .intro .top-block .heading {
+  .aa24587 .top-block .heading {
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 20px;
     text-align: center;
   }
 
-  .intro .top-block .heading span {
+  .aa24587 .top-block .heading span {
     display: block;
   }
 
-  .intro .data .section-header {
+  .aa24587 .data .section-header {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -5438,34 +5268,34 @@ only screen and (max-width: 767px) {
     color: #3a726d;
   }
 
-  .intro .data .section-header .text-small {
+  .aa24587 .data .section-header .text-small {
     font-size: 24px;
     margin: 10px 0 0;
     white-space: nowrap;
   }
 
-  .intro .data .section-content {
+  .aa24587 .data .section-content {
     max-width: 310px;
     margin: 0 auto;
   }
 
-  .intro .data .list {
+  .aa24587 .data .list {
     margin: -18px -10px;
     max-width: 330px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .intro .data .item {
+  .aa24587 .data .item {
     width: calc(100% / 2 - 10px * 2);
     margin: 18px 10px;
   }
 
-  .intro .data .item .content {
+  .aa24587 .data .item .content {
     padding-top: 50px;
   }
 
-  .intro .data .item .top-text {
+  .aa24587 .data .item .top-text {
     font-size: 30px;
     line-height: 20px;
     min-height: 40px;
@@ -5473,11 +5303,11 @@ only screen and (max-width: 767px) {
     font-weight: 900;
   }
 
-  .intro .data .item .text-large {
+  .aa24587 .data .item .text-large {
     font-size: 48px;
   }
 
-  .intro .data .item .main-text {
+  .aa24587 .data .item .main-text {
     font-size: 22px;
   }
 
@@ -5736,25 +5566,25 @@ only screen and (max-width: 767px) {
     max-width: calc(100% - 20px - 8px);
   }
 
-  .en-us .intro .top-block .grid-right {
+  .en-us .aa24587 .top-block .grid-right {
     padding-top: 100px;
   }
 
-  .en-us .intro .top-block .section-content {
+  .en-us .aa24587 .top-block .section-content {
     font-size: 14px;
     line-height: 20px;
   }
 
-  .en-us .intro .top-block .heading {
+  .en-us .aa24587 .top-block .heading {
     font-size: 18px;
     line-height: 30px;
   }
 
-  .en-us .intro .data .item .content {
+  .en-us .aa24587 .data .item .content {
     padding-top: 30px;
   }
 
-  .en-us .intro .data .item .top-text {
+  .en-us .aa24587 .data .item .top-text {
     font-size: 12px;
     line-height: 18px;
     min-height: 36px;
@@ -5762,11 +5592,11 @@ only screen and (max-width: 767px) {
     padding: 0 5px;
   }
 
-  .en-us .intro .data .item .text-large {
+  .en-us .aa24587 .data .item .text-large {
     font-size: 48px;
   }
 
-  .en-us .intro .data .item .main-text {
+  .en-us .aa24587 .data .item .main-text {
     font-size: 22px;
   }
 
@@ -5832,7 +5662,7 @@ only screen and (max-width: 767px) {
     text-align: left;
   }
 
-  .intro .top-block p {
+  .aa24587 .top-block p {
     font-size: 16px;
   }
 
