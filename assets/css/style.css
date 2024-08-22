@@ -3082,36 +3082,6 @@ input[type="radio"]:focus {
   height: auto;
 }
 
-.qwedd224.active .qwedd224-slogan {
-  -moz-animation: fadeInUp 0.8s both;
-  -webkit-animation: fadeInUp 0.8s both;
-  animation: fadeInUp 0.8s both;
-  animation-delay: .1s;
-}
-
-.qwedd224.active .qwedd224-sub {
-  -moz-animation: fadeInUp 0.8s both;
-  -webkit-animation: fadeInUp 0.8s both;
-  animation: fadeInUp 0.8s both;
-  animation-delay: .4s;
-}
-
-.qwedd224.active .qwedd224-light {
-  -moz-animation: fadeIn 0.8s both;
-  -webkit-animation: fadeIn 0.8s both;
-  animation: fadeIn 0.8s both;
-  animation-delay: .6s;
-}
-
-.qwedd224.active .qwedd224-light img {
-  -moz-animation: fadeIn 2s both;
-  -webkit-animation: fadeIn 2s both;
-  animation: fadeIn 2s both;
-  animation-delay: .6s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-}
-
 .aa24587 {
   background: RGB (230, 236, 229);
 }
@@ -3334,7 +3304,6 @@ input[type="radio"]:focus {
 }
 
 .speaker .bg {
-  background-image: url(../images/speaker-bg.jpg);
   background-size: 1920px auto;
   background-position: center bottom;
 }
@@ -3405,7 +3374,6 @@ input[type="radio"]:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../images/speaker-image-shadow.png);
   background-position: center bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -3414,7 +3382,6 @@ input[type="radio"]:focus {
 .speaker .content,
 .speaker1 .content {
   position: relative;
-  background-image: url(../images/speaker-item-bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding: 16px;
@@ -3453,7 +3420,6 @@ input[type="radio"]:focus {
 }
 
 .agenda .bg {
-  background-image: url(../images/agenda-bg.jpg);
   background-size: cover;
   background-position: center top;
 }
@@ -3467,10 +3433,6 @@ input[type="radio"]:focus {
 .agenda .section-header {
   margin-bottom: 20px;
   color: #18978F;
-}
-
-.agenda .section-header .icon-arrow {
-  background-image: url(../images/heading-arrow2.svg);
 }
 
 .agenda .top-text {
@@ -4009,7 +3971,6 @@ input[type="radio"]:focus {
 .speaker-modal .modal-content {
   padding: 33px;
   background-color: #d4e8e9;
-  background-image: url(../images/speaker-modal-bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -4116,7 +4077,6 @@ input[type="radio"]:focus {
 .form-modal .modal-content {
   padding: 55px 30px 65px;
   background-color: #00605f;
-  background-image: url(../images/modal-bg.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -4600,7 +4560,6 @@ only screen and (max-width: 767px) {
 
   .speaker-modal .modal-content {
     padding: 40px 25px 84px;
-    background-image: url(../mages/modal-bg_s.jpg);
   }
 
   .speaker-modal .grid {
@@ -4680,7 +4639,6 @@ only screen and (max-width: 767px) {
 
   .form-modal .modal-content {
     padding: 40px 25px 84px;
-    background-image: url(../images/modal-bg_s.jpg);
   }
 
   .form-modal p {
@@ -4801,7 +4759,6 @@ only screen and (max-width: 767px) {
   }
 
   .aa24587 .bg {
-    background-image: url(../images/intro-bg_s.jpg);
     background-size: 1024px auto;
     height: 1485px;
   }
@@ -4929,7 +4886,6 @@ only screen and (max-width: 767px) {
   }
 
   .speaker .bg {
-    background-image: url(../images/speaker-bg_s.jpg);
     background-size: 1024px auto;
   }
 
@@ -4961,7 +4917,6 @@ only screen and (max-width: 767px) {
   }
 
   .agenda .bg {
-    background-image: url(../images/agenda-bg_s.jpg);
     background-size: 1024px auto;
   }
 
@@ -5022,27 +4977,7 @@ only screen and (max-width: 767px) {
     width: 100%;
   }
 
-  .esg .container {
-    padding-top: 40px;
-    padding-bottom: 35px;
-  }
-
-  .esg .section-header {
-    margin-bottom: 20px;
-  }
-
-  .esg .section-header span {
-    max-width: calc(100% - 104px);
-  }
-
-  .esg .top-text {
-    text-align: justify;
-    margin-bottom: 20px;
-  }
-
-  .esg .top-text br {
-    display: none;
-  }
+  
 
   .partner .container {
     /* padding-top: 35px; */
