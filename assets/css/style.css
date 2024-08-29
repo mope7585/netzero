@@ -2708,12 +2708,13 @@ table {
 }
 
 p {
-  margin: 0;
+    margin: 0;
+    font-size: large;
 }
 
 strong {
   font-weight: 700;
-  color: #00BB9B;
+  color: #2fa19a
 }
 
 h1,
@@ -3710,19 +3711,14 @@ input[type="radio"]:focus {
 }
 
 .traffic .block .hd {
-  border: 2px solid #18978F;
+  border: 0px solid #18978F;
   color: #18978F;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
-  padding-left: 15px;
+  padding-left: 0px;
   padding-right: 15px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-bottom: 10px;
+ 
 }
 
 .traffic .block-1 {
@@ -5439,7 +5435,7 @@ only screen and (max-width: 767px) {
   display: flex;
   margin: auto;
   width: 130px;
-  background-color: #01bc85;
+  background-color: #39a69f;
   font-weight: 600;
   color: #fff;
 }
